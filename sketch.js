@@ -9,7 +9,8 @@ var tree1;
 var stone1;
 var boyImage, boy1;
 var mango1, mango2, mango3, mango4, mango5;
-var slingshot1;
+var slingshot;
+var launcherObject;
 
 function preload()
 {
@@ -43,13 +44,13 @@ function setup() {
 	mango3= new Mango(1000,200,20);
 	mango4= new Mango(860,200,20);
 	mango5= new Mango(930,150,20);
-	slingshot1= new SlingShot(stone1.body, {x:200,y:100});
+	slingshot= new SlingShot(stone1.body, {x:200,y:100});
 
 	boy1=createSprite(150, 590, 10,10);
 	boy1.addImage(boyImage);
 	boy1.scale=0.2
 
-
+	//launcherObject=new Slingshot(stone1.body,{x:235,y:420})
 	
 
 	Engine.run(engine);
@@ -70,7 +71,7 @@ mango2.display();
 mango3.display()
 mango4.display();
 mango5.display();
-slingshot1.display();
+//slingshot.display();
 
 detectCollision(stone1, mango1);
 detectCollision(stone1, mango2);
