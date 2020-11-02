@@ -71,7 +71,7 @@ mango2.display();
 mango3.display()
 mango4.display();
 mango5.display();
-//slingshot.display();
+slingshot.display();
 
 detectCollision(stone1, mango1);
 detectCollision(stone1, mango2);
